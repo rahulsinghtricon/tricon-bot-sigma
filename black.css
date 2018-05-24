@@ -141,3 +141,26 @@ body {
 .bot-collapsed {
     display: none;
 }
+
+.botui-actions-container{
+  padding: 10px 20px;
+  bottom: 0;
+  position: fixed;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.botui-actions-buttons, .botui-actions-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+button.botui-actions-buttons-button, input.botui-actions-text-input {
+  width: 100%;
+  margin: 5px 10px;
+  box-sizing: border-box;
+  position: relative;
+}
