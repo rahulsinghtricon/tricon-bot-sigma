@@ -1,15 +1,15 @@
 var botui = new BotUI('api-bot');
 
-var socket = io.connect('http://localhost:8010');
+var socket = io.connect('http://54.213.203.67:8081');
 
 botui.message.add({
-  content: 'Lets Start Talking...',
+  content: 'How may I help you?',
   delay: 500,
 });
 
 botui.action.text({
   action: {
-    placeholder: 'Say Something!',
+    placeholder: 'Type your queries here',
   }
 }).then(function (res) {
   socket.emit('fromClient', { client: res.value }); // sends the message typed to server
@@ -31,7 +31,7 @@ socket.on('fromServer', function (data) { // recieveing a reply from server.
     botui.action.text({
       autoHide: false,
       action: {
-        placeholder: 'Say Something!',
+        placeholder: 'Type your queries here',
       }
     }).then(function (res) {
       socket.emit('fromClient', { client: res.value }); // sends the message typed to server
