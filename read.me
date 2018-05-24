@@ -1,0 +1,23 @@
+The Convo.js file connects to a 
+
+Main Component for extension:
+    1. Manifest.json
+        It specifies all the configurations required for chrome extension. 
+        The configurations specifies: 
+        () the manifest version, Tricon Chat-Bot-Sigma Extension uses manifest version 2 standard provided by Chrome.
+        (1) default page that will be loaded once the extension is invoked.
+        (2) the permissions the extension need from the user, Tricon Chat-Bot requires only the access of the DOM of the active tab.
+        (3) the conditions in which the scripts of the extension is loaded.
+
+Steps to add the Tricon-Bot Sigma Extension:
+    (1) Open chrome://extensions/ from the Google Browser, alternatively you can go to More Tools >> Extensions.
+    (2) Turn On the Developer Mode.
+    (3) Click on Load Unpackaged, and Upload the project source folder i.e Tricon-Bot-Sigma
+    (4) The Extension will be added to the Google Chrome Browser.
+
+Tricon-Bot-Sigma is built using the following:
+    1. BotUI: BotUI is a JavaScript framework which makes it super easy to build conversational UIs.
+    2. Socket.IO: Socket.IO is a JavaScript library for realtime web applications. It enables realtime, bi-directional communication between web clients and server.
+    3.Vue.JS: Used by BotUI as a dependency.
+
+    As Chrome extension does not support using 3rd

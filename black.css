@@ -1,0 +1,143 @@
+/* html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 320px;
+} */
+.botui-app-container {
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+/* .page-header {
+  position: fixed;
+  top:0;
+  left:0;
+  width: inherit; 
+  background-color: #3c4f58;
+  border-bottom: 2px dotted #c4c25f;
+  border-bottom: 4px solid #1a9b8c;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+
+#tricon-bot-sigma-header{
+  background-color: #3c4f58;
+  font-size: 14px;
+  max-height: 20px;
+  color: white;
+  padding: 12px;
+  margin: 0;
+  /* z-index: 1; */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+.button.botui-actions-buttons-button, input.botui-actions-text-input{
+  width: 260px;
+}
+
+.botui-container {
+  background-color: rgb(224, 224, 224);
+  max-width: inherit;
+  width: inherit;
+}
+.botui-message-content {
+  color: rgb(255, 255, 255);
+  background-color: rgb(94, 124, 104);
+}
+.botui-messages-container{
+  top: 45px;
+  position: absolute;
+  width: 320px;
+  box-sizing: border-box;
+  max-height: 355px;
+  overflow-y: inherit;
+}
+
+.botui-message-content.human {
+  background-color: rgb(124, 124, 124);
+  margin-bottom: 20px;
+}
+
+ .botui-actions-text-input {
+  position: fixed;
+  bottom: 10px;
+  width: inherit;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #3498DB;
+  opacity: 1;
+  z-index: 100;
+  margin-top: 4px;
+} 
+
+.botui-actions-buttons-button {
+  line-height: 1 !important;
+  background-color: #3498DB;
+}
+
+.botui-message-content-link {
+  color: #F1C40F;
+}
+
+.botui-actions-text-submit {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+}
+
+.botui-messages-container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.botui-messages-container::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.botui-messages-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #3c4f57;
+}
+
+.tricon-bot-sigma{
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+    z-index: 100;
+    min-height: 320px;
+    background-color: #DFDFDF;
+    /* width: auto; */
+    scroll-behavior: smooth;
+    width: 320px;
+    display: block !important;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    max-height: 450px;
+}
+
+.iframe-collapsed{
+    height: 50px;
+    min-height: 50px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.bot-collapsed {
+    display: none;
+}

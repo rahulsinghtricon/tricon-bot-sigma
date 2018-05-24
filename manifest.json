@@ -1,0 +1,25 @@
+{
+    "manifest_version":2,
+    "name":"Tricon-Bot-Sigma",
+    "description":"chrome extension for dialogflow",
+    "version":"1.0.0",
+    "author":"Tricon Infotech Pvt Ltd",
+    "icons":{"128":"icon_128.png"},
+    "browser_action":{
+        "default_icon":"icon.png"
+    },
+    "permissions":["activeTab"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "content_scripts":[
+        {
+        "matches":["https://angular.io/**","https://www.sigmaaldrich.com/*","https://www.triconinfotech.com/*","http://www.triconinfotech.com/*"],
+        "js":["manipulate-dom.js","jquery.min.js","vue.min.js","socket.io.js","botui.js","convo.js"],
+        "css":["botui.min.css","botui-theme-default.css","black.css"]
+    }
+],
+    "web_accessible_resources": [
+        "botui.min.css","botui-theme-default.css","black.css",
+        "jquery.min.js","vue.min.js","socket.io.js","botui.js","convo.js","manipulate-dom.js","promise.js"
+    ]
+
+}
