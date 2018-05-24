@@ -19,7 +19,7 @@
 ],
     "web_accessible_resources": [
         "botui.min.css","botui-theme-default.css","black.css",
-        "jquery.min.js","vue.min.js","socket.io.js","botui.js","convo.js","manipulate-dom.js","promise.js"
+        "jquery.min.js","vue.min.js","socket.io.js","botui.js","convo.js","manipulate-dom.js","promise.js",""
     ]
 
 }
